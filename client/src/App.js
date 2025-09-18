@@ -32,7 +32,7 @@ function App() {
 
   const joinRoom = async (roomId) => {
     try {
-      const response = await fetch("/api/rooms/join", {
+       const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/rooms/join`, { // <-- fixed syntax
         method: "POST",
         headers: {
           "Content-Type": "application/json",
