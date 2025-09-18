@@ -7,12 +7,19 @@ require("dotenv").config()
 
 const app = express()
 const server = http.createServer(app)
+const allowedOrigins = [
+  "https://collaborative-wh-git-a9eff2-harsh-srivastavas-projects-17f06eff.vercel.app",
+  "https://collaborative-whiteboard-frontend-g.vercel.app",
+  "https://collaborative-whiteboard-frontend-gzvz-ami3yk513.vercel.app"
+];
+
 const io = socketIo(server, {
   cors: {
-    origin: "https://collaborative-whiteboard-frontend-one.vercel.app",
+    origin: allowedOrigins,
     methods: ["GET", "POST"],
   },
-})
+});
+
 
 
 // Middleware
