@@ -2,6 +2,10 @@
 
 A real-time collaborative whiteboard application built with the MERN stack (MongoDB, Express.js, React.js, Node.js) and Socket.io for live collaboration.
 
+# Deployed on vercel
+
+https://collaborative-wh-git-a9eff2-harsh-srivastavas-projects-17f06eff.vercel.app/
+
 # Demo Video G-drive Link
 
 https://drive.google.com/file/d/16_lCacq9rpgrKn5wqW_AtTWHcpCo4jp7/view?usp=sharing
