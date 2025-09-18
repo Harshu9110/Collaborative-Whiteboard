@@ -10,7 +10,7 @@
     "install-server": "cd server && npm install",
     "install-client": "cd client && npm install",
     "install-all": "npm run install-server && npm run install-client",
-   "build": "cd client && chmod +x ./node_modules/.bin/react-scripts && react-scripts build",
+   "build": "react-scripts build",
 
     "start": "cd server && npm start"
   },
