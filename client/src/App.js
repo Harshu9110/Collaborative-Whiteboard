@@ -11,7 +11,7 @@ function App() {
   const [isConnected, setIsConnected] = useState(false)
 
   useEffect(() => {
-    const newSocket = io("http://localhost:5000")
+    const newSocket = io(process.env.REACT_APP_SOCKET_URL)
 
     newSocket.on("connect", () => {
       setIsConnected(true)

@@ -2,6 +2,10 @@
 
 A real-time collaborative whiteboard application built with the MERN stack (MongoDB, Express.js, React.js, Node.js) and Socket.io for live collaboration.
 
+# Demo Video G-drive Link
+
+https://drive.google.com/file/d/16_lCacq9rpgrKn5wqW_AtTWHcpCo4jp7/view?usp=sharing
+
 ## Features
 
 - **Real-time Collaboration**: Up to 4 users can draw simultaneously with live synchronization
