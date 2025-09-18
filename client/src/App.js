@@ -11,7 +11,10 @@ function App() {
   const [isConnected, setIsConnected] = useState(false)
 
   useEffect(() => {
-    const newSocket = io(process.env.REACT_APP_SOCKET_URL)
+   const newSocket = io(process.env.REACT_APP_SOCKET_URL, {
+  transports: ["websocket"],  // ensures WebSocket is used
+  withCredentials: true,
+})
 
     newSocket.on("connect", () => {
       setIsConnected(true)
